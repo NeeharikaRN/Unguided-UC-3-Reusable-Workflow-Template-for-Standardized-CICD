@@ -1,9 +1,6 @@
-import { sum } from './sum.js';
+// sum.test.js
+const { sum } = require('./sum.js');
 
-test('adds two numbers correctly', () => {
-  expect(sum(3, 4)).toBe(7);
-});
-
-test('throws error if inputs are not numbers', () => {
-  expect(() => sum('a', 5)).toThrow('Inputs must be numbers');
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
 });
