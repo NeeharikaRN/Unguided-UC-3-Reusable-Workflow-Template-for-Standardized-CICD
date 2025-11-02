@@ -1,0 +1,17 @@
+name: Project CI/CD
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+
+jobs:
+  call-shared-ci:
+    uses: NeeharikaRN/org-ci-templates/.github/workflows/ci-template.yml@main
+    with:
+      node-version: '20'
+      run-tests: true
+    secrets:
+      REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
