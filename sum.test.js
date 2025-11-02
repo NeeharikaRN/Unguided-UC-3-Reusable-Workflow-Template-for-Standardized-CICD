@@ -6,3 +6,4 @@ test('adds two numbers correctly', () => {
 
 test('throws error if inputs are not numbers', () => {
   expect(() => sum('a', 5)).toThrow('Inputs must be numbers');
+});
