@@ -1,0 +1,17 @@
+{
+  "name": "sample-ci-cd-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app for testing reusable CI/CD workflow",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "test": "jest --coverage",
+    "build": "echo 'Building application...'"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
+  },
+  "type": "module"
+}
